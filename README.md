@@ -2,7 +2,7 @@
 ## Atividade - DevSecOps - Docker
 Esta documentação tem por objetivo documentar as etapas realizadas para a execução da atividade proposta com a descrição a seguir
 
-# Descrição da atividade
+## Descrição da atividade
 Instalação e configuração do DOCKER ou CONTAINERD no host
 EC2;
 
@@ -22,7 +22,7 @@ Configuração do serviço de
 Load Balancer AWS para a
 aplicação Wordpress.
 
-# Pontos de atenção:
+## Pontos de atenção:
 * Não utilizar ip público para saída
 do serviços WP (Evitem publicar o
 serviço WP via IP Público);
@@ -47,6 +47,6 @@ estar rodando na porta 80 ou
 versionamento;
 * Criar documentação.
 
-## SEGUIR DESENHO TOPOLOGIA DISPOSTA
+### SEGUIR DESENHO TOPOLOGIA DISPOSTA
 ![Texto Alternativo](https://github.com/oliamanda/Atv_docker_aws_projeto/blob/main/Arquitetura.png?raw=true)
 
