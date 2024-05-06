@@ -58,6 +58,7 @@ versionamento;
   * Na opção "Gerar automáticamente" atribua um nome a sua vpc;
   * Na opção "Número de zonas de disponibilidade (AZs)" selecione 2;
   * Na opção "Gateways NAT (USD)" selecione a opção EM 1 AZ;
-  * 
-![Texto Alternativo](
+  * Na opção "Endpoints da VPC" selecione nenhuma.
+![Texto Alternativo](https://github.com/oliamanda/Atv_docker_aws_projeto/blob/main/vpc.png?raw=true)
+
   
