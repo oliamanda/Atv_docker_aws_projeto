@@ -5,5 +5,6 @@ Esta documentação tem por objetivo documentar as etapas realizadas para a exec
 # Descrição da atividade
 Instalação e configuração do DOCKER ou CONTAINERD no host
 EC2;
+
 Ponto adicional para o trabalho utilizar a instalação via script de Start
 Instance (user_data.sh)
