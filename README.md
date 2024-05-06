@@ -7,10 +7,32 @@ Instalação e configuração do DOCKER ou CONTAINERD no host
 EC2;
 
 Ponto adicional para o trabalho utilizar a instalação via script de Start
-Instance (user_data.sh)
+Instance (user_data.sh);
 
 Efetuar Deploy de uma
 aplicação Wordpress com:
 container de aplicação
-RDS database Mysql
+RDS database Mysql;
 
+Configuração da utilização do serviço
+EFS AWS para estáticos do container
+de aplicação Wordpress;
+
+Configuração do serviço de
+Load Balancer AWS para a
+aplicação Wordpress.
+
+# Pontos de atenção:
+* Não utilizar ip público para saída
+do serviços WP (Evitem publicar o
+serviço WP via IP Público);
+* sugestão para o tráfego de internet
+sair pelo LB (Load Balancer Classic);
+* pastas públicas e estáticos do
+wordpress sugestão de utilizar
+o
+EFS (Elastic File Sistem);
+* Fica a critério de cada
+integrante (ou dupla) usar
+Dockerfile ou
+Dockercompose;
