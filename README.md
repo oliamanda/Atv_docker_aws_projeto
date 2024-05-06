@@ -48,5 +48,5 @@ versionamento;
 * Criar documentação.
 
 ## SEGUIR DESENHO TOPOLOGIA DISPOSTA
-https://github.com/oliamanda/Atv_docker_aws_projeto/blob/main/Arquitetura.png?raw=true
+![Texto Alternativo](https://github.com/oliamanda/Atv_docker_aws_projeto/blob/main/Arquitetura.png?raw=true)
 
