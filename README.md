@@ -50,3 +50,14 @@ versionamento;
 ### SEGUIR DESENHO TOPOLOGIA DISPOSTA
 ![Texto Alternativo](https://github.com/oliamanda/Atv_docker_aws_projeto/blob/main/Arquitetura.png?raw=true)
 
+## Passo 1: Criação da VPC
+* Na console Aws procure pelo serviço VPC;
+* Na barra lateral esquerda em "Nuvem privadxa virtual" selecione a opção "Suas vpc's"
+* Selecione "Criar vpc";
+* Selecione a opção "VPC e muito mais" e faça as seguintes configurações;
+  * Na opção "Gerar automáticamente" atribua um nome a sua vpc;
+  * Na opção "Número de zonas de disponibilidade (AZs)" selecione 2;
+  * Na opção "Gateways NAT (USD)" selecione a opção EM 1 AZ;
+  * 
+![Texto Alternativo](
+  
