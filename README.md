@@ -43,6 +43,9 @@ login);
 * Aplicação Wordpress precisa
 estar rodando na porta 80 ou
 8080;
-  * Utilizar repositório git para
+* Utilizar repositório git para
 versionamento;
 * Criar documentação.
+
+# SEGUIR DESENHO TOPOLOGIA DISPOSTA
+
