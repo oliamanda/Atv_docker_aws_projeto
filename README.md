@@ -283,3 +283,9 @@ versionamento;
   * Utilizei os seguintes comandos
        * docker ps
        * docker-cpmpose ls
+ ![Texto Alternativo](https://github.com/oliamanda/Atv_docker_aws_projeto/blob/main/dh%20-f.png?raw=true)
+###  Testando se o EFS está montado
+  * df -h
+  
+    ![Texto Alternativo](https://github.com/oliamanda/Atv_docker_aws_projeto/blob/main/instance.png?raw=true)
+    
