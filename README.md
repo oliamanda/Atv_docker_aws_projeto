@@ -167,9 +167,9 @@ versionamento;
 * Na opção "Detalhes avançados", no campo "Dados do usuario" adicione seu script
 * Abaixo segue um modelo de como adicionei o meu.
     
- #!/bin/bash
- #Atualizar os pacotes do sistema
- sudo yum update -y
+      #!/bin/bash
+     #Atualizar os pacotes do sistema
+      sudo yum update -y
 
  #Instalar, iniciar e configurar a inicialização automática do docker
  sudo yum install docker -y 
