@@ -67,7 +67,7 @@ versionamento;
 * Selecione a opção "Security Groups" e selecione criar grupo de segurança;
 * Crie e configure os seguintes security groups conforme modelo abaixo;
 
-  #### Load Balancer - Obs: regras de entrada
+ - #### Load Balancer - Obs: regras de entrada
         | Type | Protocol | Port Range |   Source  |
         |:----:|:--------:|:----------:|:---------:|
         | HTTP | TCP      | 80         | 0.0.0.0/0 |
@@ -259,7 +259,7 @@ docker-compose -f /mnt/efs/docker-compose.yaml up -d
 * Acessei o console AWS e busque pelo serviço VPC.
 * No menu lateral esquerdo, na seção de "Nuvem privada virtual" selecione "Endpoints".
 * Selecione Criar endpoint".
-*Faça as seguintes configurações:
+* Faça as seguintes configurações:
   *Em "Etiqueta de nome" atribua um nome ao Endpoints.
     * Na opção "Categoria de serviço" selecione "Endpoint do EC2 Instance Connect".
     * Na opção "VPC" selecione a VPC criada anteriormente.
@@ -274,4 +274,7 @@ docker-compose -f /mnt/efs/docker-compose.yaml up -d
 * Na tela seguinte preenchi os dados para criação de um usuário.
 * Cliquei em "Install WordPress" para finalizar.
 
-  ![Texto Alternativo]
+  ![Texto Alternativo](https://github.com/oliamanda/Atv_docker_aws_projeto/blob/main/WordPress.png?raw=true)
+
+![Texto Alternativo](
+  
