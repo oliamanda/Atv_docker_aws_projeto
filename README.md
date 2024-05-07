@@ -119,7 +119,7 @@ versionamento;
          Revisei e clique em "CRIAR" para finalizar a criação do sistemas de arquivos.
 
 
-          ### Criando o Relational Database Service:
+ ### Criando o Relational Database Service:
 * Acesse o console AWS e procure pelo serviço de "RDS".
  * Ciquei na opção "Criar banco de dados".
  * Faça as seguintes configurações:
