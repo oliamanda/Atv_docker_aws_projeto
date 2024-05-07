@@ -119,7 +119,7 @@ versionamento;
          Revisei e clique em "CRIAR" para finalizar a criação do sistemas de arquivos.
 
 
- ### Criando o Relational Database Service:
+ ### Passo 4: Criando o Relational Database Service:
 * Acesse o console AWS e procure pelo serviço de "RDS".
  * Ciquei na opção "Criar banco de dados".
  * Faça as seguintes configurações:
@@ -131,7 +131,7 @@ versionamento;
     * Na opção "Configuração adicional", no campo "Porta do banco de dados" atribua um nome.
 *Revisei as configurações e  clique em "Criar banco de dados" para finalizar.
 
-### Criando o Classic Load Balancer: 
+### Passo 5: Criando o Classic Load Balancer: 
 * Acesse o console AWS e procure pelo serviço de EC2
 * No menu lateral esquerdo na parte final, na seção de "Balanceamento de carga" clique em "Load Balancers".
 * Cique em *Criar load balancer".
@@ -143,7 +143,7 @@ versionamento;
 * Na seção "Verificações de integridade", no campo "Caminho de ping" adicionei o caminho "/wp-admin/install.php".
 * Clique em "Criar load balancer" para finalizar.
 
-  ### Gerando a Key pair:
+  ### Passo 6: Gerando a Key pair:
 * Acesse o console AWS e procure pelo serviço de EC2
 * No menu lateral esquerdo, escolha "Rede de sugurança" e selecione "Pares de chaves".
 * Selecione "Criar par de chaves".
@@ -153,7 +153,7 @@ versionamento;
 * Cliquei no botão "Criar par de chaves".
 * Salvei o arquivoem local seguro.
 
-### Criando o Launch Template:
+### Passo 7: Criando o Launch Template:
 * Acesse o console AWS e procure pelo serviço de EC2
 * No menu lateral esquerdo selecione "Modelos de execução";
 * Selecione "Criar modelo de execução";
