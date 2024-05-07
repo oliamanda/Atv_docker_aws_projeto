@@ -123,12 +123,12 @@ versionamento;
 * Acesse o console AWS e procure pelo serviço de "RDS".
  * Ciquei na opção "Criar banco de dados".
  * Faça as seguintes configurações:
-    * Na opção "Opções do mecanismo" selecione "MySQL".
-    * Na opção "Modelos" selecione o "Nível gratuito".
-    * Na opção "Configurações de credenciais" crie  uma senha.
-    * Na opção "Conectividade" selecione a VPC criada anteriormente.
-    * No opção "Grupos de segurança da VPC existentes" selecione o grupo do RDS que foi criado anteriormente.
-    * Na opção "Configuração adicional", no campo "Porta do banco de dados" atribua um nome.
+ * Na opção "Opções do mecanismo" selecione "MySQL".
+ * Na opção "Modelos" selecione o "Nível gratuito".
+ * Na opção "Configurações de credenciais" crie  uma senha.
+ * Na opção "Conectividade" selecione a VPC criada anteriormente.
+ * No opção "Grupos de segurança da VPC existentes" selecione o grupo do RDS que foi criado anteriormente.
+ * Na opção "Configuração adicional", no campo "Porta do banco de dados" atribua um nome.
 *Revisei as configurações e  clique em "Criar banco de dados" para finalizar.
 
 ### Passo 5: Criando o Classic Load Balancer: 
@@ -226,25 +226,25 @@ versionamento;
 * Clique em criar modelo de execução para finalizar.
 
 
-  ### Criando o Auto Scaling Groups: 
+  ### Passo 8: Criando o Auto Scaling Groups: 
 * Acesse o console AWS e procure pelo serviço  de EC2.
 * No menu lateral esquerdo, na seção de "Auto Scaling" selecione "Grupos de Auto Scaling".
 * Selecione "Criar grupo de Auto Scaling".
 * Faça as seguinte configuração:
-     #### Configuração 1 - Escolher o modelo de execução:
+  #### Configuração 1 - Escolher o modelo de execução:
         * Na opção "Nome do grupo do Auto Scaling" atribua um nome.
         * Na opção "Modelo de execução" selecione o template criado anteriormente.
         * Clique em "Próximo" paea avançar.
-     #### Configuração 2 - Escolher as opções de execução de instância:
+  #### Configuração 2 - Escolher as opções de execução de instância:
         * Na opção "Rede", no campo "VPC" escolha a VPC criada anteriormente.
         * Na opção "Zonas de disponibilidade e sub-redes" selecione as duas subnets privadas criadas anteriormente.
         * Cliquei em "Próximo" para avançar.
-    - #### Configuração  3 - Configurar opções avançadas - opcional :
+  #### Configuração  3 - Configurar opções avançadas - opcional :
         * Na opção "Balanceamento de carga" selecione Anexar a um balanceador de carga existente.
         * Clique em "Escolher entre Classic Load Balancers" e selecione o load balancer criado anteriormente.
         * Na opção "Verificações de integridade" marque a opção "Ative as verificações de integridade do Elastic Load Balancing".
         * Cliquei em "Próximo" para avançar.
-    - #### Configuração  4 - Configurar tamanho do grupo e ajuste de escala - opcional :
+  #### Configuração  4 - Configurar tamanho do grupo e ajuste de escala - opcional :
         * Na opção "Tamanho do grupo" digitei "2".
         * Na opção "Escalabilidade", no campo "Capacidade mínima desejada" digite "2".
         * No campo "Capacidade máxima desejada" coloque "4".
@@ -255,7 +255,7 @@ versionamento;
         * Revise e cliquei em "Criar grupo de Auto Scaling" para finalizar.
 
 
-### Configuração do EC2 Instance Connect Endpoint:
+### Passo 9: Configuração do EC2 Instance Connect Endpoint:
 * Acessei o console AWS e busque pelo serviço VPC.
 * No menu lateral esquerdo, na seção de "Nuvem privada virtual" selecione "Endpoints".
 * Selecione Criar endpoint".
@@ -267,7 +267,7 @@ versionamento;
     * Na opção "Subnet" selecione a subnet privada que foi criada anteriormente.
 *Cliquei em "Criar endpoint" para finalizar.
 
-### Instalando o WordPress:
+### Passo 10: Instalando o WordPress:
 * Acessei o "DNS name" do "Load Balancer" através do navegador.
 * Basta copiar e colar no seu navegador
 * Na tela de instalação do "WordPress" mantive o idioma padrão e cliquei em "Continue".
