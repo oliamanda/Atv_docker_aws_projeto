@@ -66,7 +66,57 @@ versionamento;
 * No console da aws procure pelo serviço de EC2;
 * Selecione a opção "Security Groups" e selecione criar grupo de segurança;
 * Crie e configure os seguintes security groups conforme modelo abaixo;
-* 
+
+  #### Load Balancer - Obs: regras de entrada
+        | Type | Protocol | Port Range |   Source  |
+        |:----:|:--------:|:----------:|:---------:|
+        | HTTP | TCP      | 80         | 0.0.0.0/0 |
+
+    - #### EC2 Web Server - Obs: regras de entrada
+        | Type | Protocol | Port Range |       Source       |
+        |:----:|:--------:|:----------:|:------------------:|
+        |  SSH |    TCP   |     22     |      EC2 ICE       |
+        | HTTP |    TCP   |     80     |    Load Balancer   |
+
+    - #### EC2 ICE - Obs: regras de saída
+        | Type | Protocol | Port Range |       Source       |
+        |:----:|:--------:|:----------:|:------------------:|
+        |  SSH |    TCP   |     22     |    EC2 Web Server  |
+
+    - #### RDS - Obs: regras de entrada
+        |     Type     | Protocol | Port Range |        Source       |
+        |:------------:|:--------:|:----------:|:-------------------:|
+        | MYSQL/Aurora |    TCP   |    3306    |    EC2 Web Server   |
+
+    - #### EFS - Obs: regras de entrada
+        | Type | Protocol | Port Range |        Source       |
+        |:----:|:--------:|:----------:|:-------------------:|
+        | NFS  | TCP      | 2049       |    EC2 Web Server   |
+
+* Configure os grupos e relacione a sua vpc criada anteriormente.
+
+## Passo 3: Criação do EFS
+* Acesse o console da aws e procure pelo serviço de EFS;
+* Na parte lateral esquerda selecione a opção "Criar sistema de arquivos";
+* Selecione a opção "Personalizar";
+* Faça as configurações abaixo
+
+   #### Configuração 1 - Configurações do sistema de arquivos:
+         No campo "Nome" atribua um nome.
+         Clique em"PRÓXIMO" para avançar.
+
+     #### Configuração 2 - Acesso à rede:
+         No campo "Virtual Private Cloud (VPC)" selecione a VPC que foi criou anteriormente.
+         No campo "ID da sub-rede" selecione as suasubnets privadas de cada AZ.
+         No campo "Grupos de segurança" selecione o grupo do EFS que foi criado anteriormente.
+         Cliquei em "PRÓXIMO" para avançar.
+
+     #### Configuração 3 - opcional - Política do sistema de arquivos:
+        Não precisa mudar nada
+        Clique em "PRÓXIMO" para avançar.
+        
+     #### Configuração 4 - Revisar e criar:
+         Revisei e clique em **CRIAR** para finalizar a criação do sistemas de arquivos.
 
 
-  
+          
