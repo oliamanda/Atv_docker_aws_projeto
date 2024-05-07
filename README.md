@@ -59,6 +59,14 @@ versionamento;
   * Na opção "Número de zonas de disponibilidade (AZs)" selecione 2;
   * Na opção "Gateways NAT (USD)" selecione a opção EM 1 AZ;
   * Na opção "Endpoints da VPC" selecione nenhuma.
+    
 ![Texto Alternativo](https://github.com/oliamanda/Atv_docker_aws_projeto/blob/main/vpc.png?raw=true)
+
+## Passo 2 : Criação dos Security Groups: 
+* No console da aws procure pelo serviço de EC2;
+* Selecione a opção "Security Groups" e selecione criar grupo de segurança;
+* Crie e configure os seguintes security groups conforme modelo abaixo;
+* 
+
 
   
