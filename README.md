@@ -287,5 +287,5 @@ versionamento;
 ###  Testando se o EFS está montado
           * df -h
   
-    ![Texto Alternativo](https://github.com/oliamanda/Atv_docker_aws_projeto/blob/main/instance.png?raw=true)
+  ![Texto Alternativo](https://github.com/oliamanda/Atv_docker_aws_projeto/blob/main/instance.png?raw=true)
     
