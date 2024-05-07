@@ -67,7 +67,7 @@ versionamento;
 * Selecione a opção "Security Groups" e selecione criar grupo de segurança;
 * Crie e configure os seguintes security groups conforme modelo abaixo;
 
- - #### Load Balancer - Obs: regras de entrada
+    - #### Load Balancer - Obs: regras de entrada
         | Type | Protocol | Port Range |   Source  |
         |:----:|:--------:|:----------:|:---------:|
         | HTTP | TCP      | 80         | 0.0.0.0/0 |
