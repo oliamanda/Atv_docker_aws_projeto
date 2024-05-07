@@ -277,4 +277,9 @@ versionamento;
   ![Texto Alternativo](https://github.com/oliamanda/Atv_docker_aws_projeto/blob/main/WordPress.png?raw=true)
 
  ![Texto Alternativo](https://github.com/oliamanda/Atv_docker_aws_projeto/blob/main/WordPress2.png?raw=true)
-  
+
+
+  ## Acesso a instância:
+  * Utilizei os seguintes comandos
+       * docker ps
+       * docker-cpmpose ls
